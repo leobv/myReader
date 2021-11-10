@@ -46,7 +46,7 @@ export default class SearchBooks extends Component {
 				}
 			});
 		} else {
-			this.setState((currentState) => ({
+			this.setState(() => ({
 				Books: [],
 				searchError: false,
 			}));
