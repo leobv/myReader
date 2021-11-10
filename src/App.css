@@ -40,7 +40,10 @@ body, .app {
 }
 
 .bookshelf-title {
+  color: #dedede;
+  background-color:#273f6d;
   border-bottom: 1px solid #dedede;
+  text-align: center;
 }
 
 .bookshelf-books {

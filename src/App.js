@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import * as BooksAPI from './BooksAPI';
 import ListBooks from './Components/ListBooks';
 import SearchBooks from './Components/SearchBooks';
-import './App.css'
+import './App.css';
 import { Route } from 'react-router-dom';
 
 
@@ -22,7 +22,7 @@ class BooksApp extends Component {
         book.shelf = shelf;
         this.setState((currentState) => ({ books: currentState.books.filter((c) => c.id !== book.id).concat(book),
         }))
-    }).then(() => (shelf !== 'none' ? alert( `${book.authors} add successfully`) : null ))
+    }).then(() => (shelf !== 'none' ? alert( `${book.authors} added!`) : null ))
       .catch(() => alert('Bad request'));
   };
 
